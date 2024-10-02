@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" value="Third Year BCA" readonly><br><br>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" required>
+                <option value="Web Programming">Web Programming</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Data Mining">Data Mining</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Cyber Security">Cyber Security</option>
+            </select><br><br>
+
+            <label for="teacher">Teacher:</label>
+            <select id="teacher" required>
+                <option value="Archana Madam">Archana Madam</option>
+                <option value="Vasantha Madam">Vasantha Madam</option>
+                <option value="Usha Madam">Usha Madam</option>
+            </select><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+
+        <a href="feedback.html" class="view-feedback-link">View Feedback</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
